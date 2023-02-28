@@ -1,6 +1,7 @@
 using System.Xml.Serialization;
 using System;
 using System.Runtime.Serialization;
+using System.Linq;
 
 namespace Lab_2
 {
@@ -8,7 +9,6 @@ namespace Lab_2
     {
         List<Product> list = new List<Product>();
         List<Organization> listOrg = new List<Organization>();
-        Product product = new Product();
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace Lab_2
         }
         private void button4_Click(object sender, EventArgs e)
         {
+            Product product = new Product();
             try
             {
                 product.Name = textBox1.Text;
@@ -42,8 +43,6 @@ namespace Lab_2
                         break;
                     }
                 }
-
-                
             }
             catch(FormatException)
             {
@@ -56,6 +55,7 @@ namespace Lab_2
                 richTextBox1.Clear();
             }
 
+            richTextBox1.Text += "--------------------------------------" + "\n";
             richTextBox1.Text += "Название: "+ product.Name + "\n";
             richTextBox1.Text += "Инвентарный номер: " + product.ID + "\n";
             richTextBox1.Text += "Количество: " + product.Amount + "\n";
@@ -63,6 +63,9 @@ namespace Lab_2
             richTextBox1.Text += "Размер: " + product.Size + "\n";
             richTextBox1.Text += "Дата поставки: " + product.Date + "\n";
             richTextBox1.Text += "Производитель: " + comboBox1.SelectedItem + "\n";
+            richTextBox1.Text += "--------------------------------------" + "\n";
+
+            list.Add(product);
         }   
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,7 +75,7 @@ namespace Lab_2
             maskedTextBox1.Text = "";
             foreach(RadioButton radio in groupBox1.Controls)
             {
-                radio.Checked = false;
+                radio.Checked = false;  
             }
             numericUpDown1.Value = 0;
             trackBar1.Value = 0;
@@ -82,13 +85,11 @@ namespace Lab_2
         private void button5_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();  
-            XmlSerializer formatter = new XmlSerializer(typeof(Product));
-            XmlSerializer formatter2 = new XmlSerializer(typeof(Organization));
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Product>));
 
-            using (FileStream fs = new FileStream("product.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream("NewFile.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, product);
-                formatter2.Serialize(fs, form2.org);
+                formatter.Serialize(fs, list);
             }
 
             MessageBox.Show("OK");
@@ -98,19 +99,22 @@ namespace Lab_2
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Product>));
 
-            using (FileStream fs = new FileStream("product.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream("NewFile.xml", FileMode.OpenOrCreate))
             {
-                Product newproduct = formatter.Deserialize(fs) as Product;
+                List<Product>? newproduct = formatter.Deserialize(fs) as List<Product>;
 
-                if (newproduct != null)
+                if(newproduct != null)
                 {
-                    richTextBox1.Text += "Название: " + newproduct.Name + "\n";
-                    richTextBox1.Text += "Инвентарный номер: " + newproduct.ID + "\n";
-                    richTextBox1.Text += "Количество: " + newproduct.Amount + "\n";
-                    richTextBox1.Text += "Цена: " + newproduct.Price + "\n";
-                    richTextBox1.Text += "Размер: " + newproduct.Size + "\n";
-                    richTextBox1.Text += "Дата поставки: " + newproduct.Date + "\n";
-                    richTextBox1.Text += "Организация: " + newproduct.organization.OrganizationName + "\n";
+                    foreach(Product product in newproduct)
+                    {
+                        richTextBox1.Text += "Название: " + product.Name + "\n";
+                        richTextBox1.Text += "Инвентарный номер: " + product.ID + "\n";
+                        richTextBox1.Text += "Количество: " + product.Amount + "\n";
+                        richTextBox1.Text += "Цена: " + product.Price + "\n";
+                        richTextBox1.Text += "Размер: " + product.Size + "\n";
+                        richTextBox1.Text += "Дата поставки: " + product.Date + "\n";
+                        richTextBox1.Text += "Организация: " + product.Organization.OrganizationName + "\n";
+                    }
                 }
             }
         }

@@ -21,7 +21,7 @@ namespace Lab_2
             this.Organization = Organization; 
         }
 
-        public Organization Organization { get; set; } = new Organization();  
+        public Organization? Organization { get; set; } = new Organization();  
         
         public string? Name;
         public string? ID;
@@ -30,6 +30,5 @@ namespace Lab_2
         public double? Size;
         public double? Price;
         public string? Date;
-        public Organization? organization;
     }
 }
