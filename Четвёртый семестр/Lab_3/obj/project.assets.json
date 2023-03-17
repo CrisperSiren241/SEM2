@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BSTU\\ООП\\OOP_Part_2\\Четвёртый семестр\\Lab_3\\Lab_2.csproj",
+      "projectUniqueName": "D:\\BSTU\\ООП\\MYOOP\\Четвёртый семестр\\Lab_3\\Lab_2.csproj",
       "projectName": "Lab_2",
-      "projectPath": "D:\\BSTU\\ООП\\OOP_Part_2\\Четвёртый семестр\\Lab_3\\Lab_2.csproj",
+      "projectPath": "D:\\BSTU\\ООП\\MYOOP\\Четвёртый семестр\\Lab_3\\Lab_2.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\BSTU\\ООП\\OOP_Part_2\\Четвёртый семестр\\Lab_3\\obj\\",
+      "outputPath": "D:\\BSTU\\ООП\\MYOOP\\Четвёртый семестр\\Lab_3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -23,14 +23,14 @@ namespace Lab_2
         }
 
         public Organization? Organization { get; set; } = new Organization();
-
+        [Required]
         [RegularExpression(@"\w+", ErrorMessage = "Неправильно введено название!")]
         public string? Name;
         public string? ID;
         public string? Type;
         public int? Amount;
         public double? Size;
-        [Range(0,100, ErrorMessage = "Превышено значение!")]
+        [Required]
         public double? Price;
         public string? Date;
     }

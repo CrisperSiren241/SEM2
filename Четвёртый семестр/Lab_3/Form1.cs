@@ -70,19 +70,6 @@ namespace Lab_2
                 else if (radioButton3.Checked) product.Type = "Потребительское";
                 else if (radioButton4.Checked) product.Type = "Оптовое";
 
-
-                List<ValidationResult> results = new List<ValidationResult>();
-                if (!Validator.TryValidateObject(product, new ValidationContext(product), results, true))
-                {
-                    string err = "";
-                    foreach(var item in results)
-                    {
-                        err += item.ErrorMessage + "\n";
-                    }
-
-                    throw new Exception(err);
-                }
-
                 foreach(var item in listOrg)
                 {
                     if(item.OrganizationName == (string?)comboBox1.SelectedItem)
@@ -90,6 +77,17 @@ namespace Lab_2
                         product.Organization = item;
                         break;
                     }
+                }
+
+                List<ValidationResult> results = new List<ValidationResult>();
+                if (!Validator.TryValidateObject(product, new ValidationContext(product), results, true))
+                {
+                    string err = "";
+                    foreach (var item in results)
+                    {
+                        err += item.ErrorMessage + "\n";
+                    }
+                    throw new Exception(err);
                 }
             }
             catch(FormatException ex)
@@ -229,9 +227,7 @@ namespace Lab_2
             {
                 formatter.Serialize(fs, Serlist);
             }
-
             MessageBox.Show("OK");
-
             changeLabel.Text = "Сохранение";
         }
     }

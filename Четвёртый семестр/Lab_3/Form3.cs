@@ -219,7 +219,5 @@ namespace Lab_2
             MessageBox.Show("OK");
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        { }  
     }
 }
