@@ -4,18 +4,136 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Lab_4"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080">
+        xmlns:local="clr-namespace:Lab_4" xmlns:viewmodel="clr-namespace:Lab_4.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MyViewModel}"
+        mc:Ignorable="d" Height="720" Width="1080" WindowStyle="None" Background="Transparent" 
+        WindowStartupLocation="CenterScreen" AllowsTransparency="True" Loaded="Window_Loaded">
     <Grid>
-        <StackPanel Width="200" >
-            <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
-                <StackPanel>
-                    <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" />
-                    <Button Content="Add to Cart"/>
-                </StackPanel>
-            </Border>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="320"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Background="#0D0D0D" Panel.ZIndex="1" 
+        FlowDirection="RightToLeft" MouseDown="StackPanel_MouseDown">
+            <Button Style="{StaticResource ButtonCLose}" Click="Button_Click">
+                <Image Width="30" Margin="0 0 0 0" Source="/Images/Close.png"/>
+            </Button>
+            <Button Style="{StaticResource ButtonMini}" Click="Button_Click_2">
+                <Image Width="30" Margin="0.5 0 0 0" Source="/Images/maximize.png"/>
+            </Button>
+            <Button Style="{StaticResource ButtonMini}" Click="Button_Click_1">
+                <Image Width="30" Margin="0.5 0 0 0" Source="/Images/Mini.png"/>
+            </Button>
+            
         </StackPanel>
+
+        <Grid Grid.Row="1" Style="{DynamicResource mainbackground}">
+
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Margin="30 40 0 30">
+                <TextBlock Text="{DynamicResource ViewLogo}" FontSize="38" FontWeight="bold" FontFamily="Montserrat"
+                 VerticalAlignment="Center" Style="{DynamicResource Products}"></TextBlock>
+                <Rectangle VerticalAlignment="Stretch" Fill="#762EA6" Width="2" Margin="20 5 20 5"></Rectangle>
+                <Button Click="Button_Click_3" >
+                    <TextBlock Text="{DynamicResource AddProduct}" FontSize="20"/>
+                </Button>
+                <Button Margin="20 0 0 0" Content="eng" Click="Button_Click_6"></Button>
+                <Button Margin="20 0 0 0" Content="rus" Click="Button_Click_7"></Button>
+                <Button Margin="20 0 0 0" Content="Dark" Click="Dark_button"></Button>
+                <Button Margin="20 0 0 0" Content="Light" Click="Light_button"></Button>
+            </StackPanel>
+
+            <ScrollViewer Grid.Row="1" Height="500" VerticalScrollBarVisibility="Auto">
+                <ItemsControl Grid.Row="1" x:Name="ItemsList" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel x:Name="myWrapPanel"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel Grid.Row="1" >
+                                <Grid x:Name="ListPanel" Background="AliceBlue" Margin="25 15 0 0" VerticalAlignment="Center" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="175"></RowDefinition>
+                                        <RowDefinition Height="30"></RowDefinition>
+                                        <RowDefinition Height="30"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="175"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Rectangle Grid.Row="0" Fill="Gray">
+                                        
+                                    </Rectangle>
+
+                                    <Image x:Name="imageblock" Width="175"
+                                               Height="175"
+                                               Source="{Binding Path=Url}"
+                                               Panel.ZIndex="1"
+                                               RenderOptions.BitmapScalingMode="HighQuality"/>
+
+
+                                    <Button Style="{StaticResource ButtonCLose}" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                                        Click="Button_Click_4" Panel.ZIndex="2">
+                                        <Image Width="30" Margin="0 0 0 0" Source="/Images/Close.png"/>
+                                    </Button>
+
+                                    <Button Style="{StaticResource ButtonMini}" VerticalAlignment="Top" HorizontalAlignment="Right" 
+                                        Click="Button_Click_5" Panel.ZIndex="2">
+                                        <Image Width="30" Margin="0 0 0 0" Source="/Images/maximize.png"/>
+                                    </Button>
+
+                                    <Button Grid.Row="4" Height="75"  Style="{StaticResource ButtonBuy}">
+                                        <Label Content="{DynamicResource BuyButton}" Foreground="White" FontSize="28" FontFamily="montserrat" FontWeight="Bold"></Label>
+                                    </Button>
+
+                                    <Label Grid.Row="1" Content="{Binding Path=Name}" FontSize="16" HorizontalAlignment="Center" FontFamily="montserrat"></Label>
+                                    <Label Grid.Row="2" Content="{Binding Path=Price}"  FontSize="16" HorizontalAlignment="Center" FontFamily="montserrat"></Label>
+                                </Grid>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            
+            
+        </Grid>
+
+        <Grid Grid.Column="2" Grid.Row="2" Style="{DynamicResource secondarybackground}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Content="{DynamicResource SaveFile}"  Cursor="Hand" Click="Button_Click_9" Margin="0 100 0 0"></Button>            
+            
+            <Button Content="{DynamicResource Search}"  Cursor="Hand" Click="Button_Click_8"></Button>
+            <TextBox x:Name="SearchText"  Grid.Row="0" materialDesign:HintAssist.Hint="{DynamicResource SearchBar}" VerticalAlignment="Top" 
+                      FontFamily="montserrat" IsEnabled="True" Style="{DynamicResource DarkSearch}" />
+
+            <ListBox Grid.Row="1" Margin="0 100 0 0" x:Name="productListBox" ItemsSource="{Binding Path=_filteredlist}" MouseDoubleClick="productListBox_MouseDoubleClick">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=Name}" Foreground="White"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
     </Grid>
 </Window>

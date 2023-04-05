@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="mainbackground" TargetType="Grid">
+        <Setter Property="Background" Value="#E5F5FF"/>
+    </Style>
+
+    <Style x:Key="secondarybackground" TargetType="Grid">
+        <Setter Property="Background" Value="#ACB8BF"/>
+    </Style>
+
+    <Style x:Key="Products" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+    <Style x:Key="DarkSearch" TargetType="TextBox">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="Lab_4.Window1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"
+        mc:Ignorable="d" Height="350" Width="320">
+    <Grid Width="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="{DynamicResource Adding}" Background="#762EA6" Foreground="White"
+                   VerticalAlignment="Center" FontSize="26" FontFamily="montserrat" FontWeight="Bold" Padding="20" HorizontalAlignment="Center"></TextBlock>
+        <StackPanel Grid.Row="1" Orientation="Vertical" Background="#010626">
+            <TextBox x:Name="TextUrl" materialDesign:HintAssist.Hint="Url" Foreground="Black" Margin="0 20 0 0" Background="White"></TextBox>
+            <TextBox x:Name="TextName" materialDesign:HintAssist.Hint="{DynamicResource Name}" Foreground="Black" Margin="0 20 0 0" Background="White"></TextBox>
+            <TextBox x:Name="TextDescription" materialDesign:HintAssist.Hint="{DynamicResource Description}" Foreground="Black" Margin="0 20 0 0" Background="White"></TextBox>
+            <TextBox x:Name="TextPrice" materialDesign:HintAssist.Hint="{DynamicResource Price}" Foreground="Black" Margin="0 20 0 0" Background="White"></TextBox>
+            <Button  Margin="0 20 0 0" Click="Button_Click">
+                <TextBlock Text="{DynamicResource AddProduct}"></TextBlock>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

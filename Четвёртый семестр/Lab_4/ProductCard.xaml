@@ -1,0 +1,27 @@
+﻿<Window x:Class="Lab_4.ProductCard"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_4"  Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="10 10 10 10">
+            <Image x:Name="TextUrl"></Image>
+        </StackPanel>
+        
+        <Grid Grid.Column="2">
+            <TextBox x:Name="textName" materialDesign:HintAssist.Hint="Название товара"  VerticalAlignment="Top"/>
+            <TextBox x:Name="textDescription" materialDesign:HintAssist.Hint="Описание" VerticalAlignment="Top" Padding="0 100 0 0"/>
+            <TextBox x:Name="textPrice" materialDesign:HintAssist.Hint="Цена" VerticalAlignment="Top" Padding="0 160 0 0" Width="100" HorizontalAlignment="Left"/>
+            <TextBox x:Name="textUrl" materialDesign:HintAssist.Hint="Url" VerticalAlignment="Top" Padding="0 60 0 0"  TextChanged="textUrl_TextChanged"/>
+            <Button Content="Изменить" Click="Button_Click"></Button>
+        </Grid>
+        
+    </Grid>
+</Window>

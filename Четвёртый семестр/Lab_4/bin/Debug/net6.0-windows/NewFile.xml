@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <Url>https://productimages.withfloats.com/actual/5c332b43e3193300014d59a2.jpg</Url>
+    <Name>Шахматы</Name>
+    <Price>1234</Price>
+    <Description>Description</Description>
+  </Product>
+  <Product>
+    <Url>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPbt_aE-9RPcDhqUWWRr5WMswlo6L7fSvwOQ&amp;usqp=CAU</Url>
+    <Name>Овощи</Name>
+    <Price>123</Price>
+    <Description>Это Овощи</Description>
+  </Product>
+</ArrayOfProduct>
