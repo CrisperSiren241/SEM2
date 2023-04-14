@@ -1,0 +1,57 @@
+D:\BSTU\ООП\SHIMKO\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.exe
+D:\BSTU\ООП\SHIMKO\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.deps.json
+D:\BSTU\ООП\SHIMKO\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.runtimeconfig.json
+D:\BSTU\ООП\SHIMKO\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.dll
+D:\BSTU\ООП\SHIMKO\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.pdb
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.csproj.AssemblyReference.cache
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\App.g.cs
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5_MarkupCompile.cache
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5_MarkupCompile.lref
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\MainWindow.baml
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.g.resources
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.AssemblyInfoInputs.cache
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.AssemblyInfo.cs
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.csproj.CoreCompileInputs.cache
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.dll
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\refint\Lab_4-5.dll
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.pdb
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.genruntimeconfig.cache
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\ref\Lab_4-5.dll
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\ProductCard.g.cs
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\ProductCard.baml
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Resource\DictionaryRus.baml
+D:\BSTU\ООП\SHIMKO\Lab_4-5\obj\Debug\net6.0-windows\Resource\DictionaryEng.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.exe
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.deps.json
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.runtimeconfig.json
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.dll
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\bin\Debug\net6.0-windows\Lab_4-5.pdb
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.csproj.AssemblyReference.cache
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Resource\DictionaryEng.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Resource\DictionaryRus.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\ProductCard.g.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\App.g.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5_MarkupCompile.cache
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5_MarkupCompile.lref
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\MainWindow.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\ProductCard.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.g.resources
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.AssemblyInfoInputs.cache
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.AssemblyInfo.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.csproj.CoreCompileInputs.cache
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.dll
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\refint\Lab_4-5.dll
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.pdb
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Lab_4-5.genruntimeconfig.cache
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\ref\Lab_4-5.dll
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Resource\DarkTheme.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\Resource\LightTheme.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\View\UserControl1.g.cs
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\View\UserControl1.baml
+D:\BSTU\ООП\MYOOP\Четвёртый семестр\Lab_4-5\obj\Debug\net6.0-windows\App.baml

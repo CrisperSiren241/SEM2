@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+
+    <v:String x:Key="AddProduct">Add Product</v:String>
+    <v:String x:Key="ViewLogo">Shop</v:String>
+    <v:String x:Key="BuyButton">Buy</v:String>
+    <v:String x:Key="SearchBar">Search</v:String>
+    <v:String x:Key="Adding">Add Product</v:String>
+    <v:String x:Key="Name">Name</v:String>
+    <v:String x:Key="Description">Description</v:String>
+    <v:String x:Key="Price">Price</v:String>
+    <v:String x:Key="Search">Search</v:String>
+    <v:String x:Key="SaveFile">Save</v:String>
+    <v:String x:Key="SortPrice">Sort by Price</v:String>
+    <v:String x:Key="SortName">Sort by Name</v:String>
+    <v:String x:Key="Clear">Clear</v:String>
+    <v:String x:Key="Rus">Rus</v:String>
+    <v:String x:Key="Eng">Eng</v:String>
+</ResourceDictionary>
